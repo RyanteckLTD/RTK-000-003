@@ -14,13 +14,13 @@ Next you will need to connect to your Raspberry Pi via an SSH Client. Details on
 
 ###Scratch GPIO
 Now we need to install scratch, first start by downloading the installer by using the command
-'''
+```
 wget http://goo.gl/Pthh62 -O isgh5.sh
-'''
+```
 This will download the installer for ScratchGPIO V5. Next install it by running the following command:
-'''
+```
 sudo bash isgh5.sh
-'''
+```
 
 This will then install ScratchGPIO for you, after it says "Finished" you have now finished installing ScratchGPIO!
 
@@ -34,15 +34,15 @@ For this part we will be installing a VNC server allowing your other computer to
 
 First start by installing the tightvnc server using the command:
 
-'''
+```
 sudo apt-get install tightvncserver
-'''
+```
 
 Next we want to configure the server and add a password. Do this by typing in the command
 
-'''
+```
 tightvncserver
-'''
+```
 
 
 
