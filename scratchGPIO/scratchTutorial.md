@@ -33,10 +33,13 @@ For this part we will be installing a VNC server allowing your other computer to
 *NOTE* a VNC server on a Raspberry Pi will not reduce network security unless you allow people manually via a method called Port Forwarding. You will also setup a Password that is required to login to the Raspberry Pi.
 
 First start by installing the tightvnc server using the command:
+
 '''
 sudo apt-get install tightvncserver
 '''
+
 Next we want to configure the server and add a password. Do this by typing in the command
+
 '''
 tightvncserver
 '''
