@@ -22,10 +22,27 @@ This will download the installer for ScratchGPIO V5. Next install it by running 
 sudo bash isgh5.sh
 '''
 
-This will then install ScratchGPIO for you, you have now finished installing ScratchGPIO!
+This will then install ScratchGPIO for you, after it says "Finished" you have now finished installing ScratchGPIO!
 
 
 ###VNC
+VNC or Virtual Network Computing is an method we can use to be able to run a Virtual Desktop on the Raspberry Pi and use it over the network. This is now used commonly in day to day computing for cloud services or remote assitance.
+
+For this part we will be installing a VNC server allowing your other computer to connect to the Raspberry Pi.
+
+*NOTE* a VNC server on a Raspberry Pi will not reduce network security unless you allow people manually via a method called Port Forwarding. You will also setup a Password that is required to login to the Raspberry Pi.
+
+First start by installing the tightvnc server using the command:
+'''
+sudo apt-get install tightvncserver
+'''
+Next we want to configure the server and add a password. Do this by typing in the command
+'''
+tightvncserver
+'''
+
+
+
 
 
 
