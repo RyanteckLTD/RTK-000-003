@@ -6,6 +6,19 @@ The configuration stage is best performed by a person who has basic skills with 
 
 Configuration
 --------------
+###Pre Configuration
+Your SD card should already be configured to the guide "raspberryPiSetup.md" located in the top folder. This will have your Raspberry Pi configured for use on a wireless connection, you may find for the installation of the software plugging in a wired ethernet connection may speed parts of this installtaion.
+
+Next you will need to 
+
+
+
+###Scratch GPIO
+
+
+###VNC
+
+
 
 Programming with Scratch
 --------------
