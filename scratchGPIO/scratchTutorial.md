@@ -43,10 +43,20 @@ Next we want to configure the server and add a password. Do this by typing in th
 ```
 tightvncserver
 ```
+Next we want to download a piece of code that will allow us to automatically run this VNC Server on boot. This can be downloaded using the follwing command:
+```
+wget http://goo.gl/FlrtAW --no-check-certificate --trust-server-names
+```
+Finally we want to move it to the correct location and then set permissions. Copy the following code and enter it into the terminal:
+```
+sudo mv tightvncserver-init.txt /etc/init.d/tightvncserver
+sudo chown root:root /etc/init.d/tightvncserver
+sudo chmod 755 /etc/init.d/tightvncserver
+sudo update-rc.d tightvncserver defaults
+```
+Finally reboot your Pi by running "sudo restart"
 
-
-
-
+####Your Raspberry Pi Should now be ready for scratching!
 
 
 Programming with Scratch
@@ -55,7 +65,7 @@ Programming with Scratch
 
 ---------------------------------------
 Scratch GPIO is created by Simon Walters, Scratch is a project of the Lifelong Kindergarten Group at the MIT Media Lab.
-Thanks to Penguin Tutor for letting me base the VNC installation off of his tutorial at http://www.penguintutor.com/linux/tightvnc
+Thanks to Penguin Tutor for letting me base the VNC installation off of his tutorial at http://www.penguintutor.com/linux/tightvnc , VNC Startup script also created by Penguin Tutor.
 
 
 
