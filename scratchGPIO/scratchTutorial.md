@@ -57,6 +57,7 @@ sudo update-rc.d tightvncserver defaults
 Finally reboot your Pi by running "sudo restart"
 
 ####Your Raspberry Pi Should now be ready for scratching!
+####You will now need to connect to your Raspberry Pi using VNC. See the guide "connectingToVNC" in the handyTipsGuides folder on how to connect.
 
 
 Programming with Scratch
