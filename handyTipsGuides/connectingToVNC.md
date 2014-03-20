@@ -18,10 +18,6 @@ After you may have an warning message appear about not using an encrypted connec
 
 You should now be connected to your Raspberry Pi!
 
-
-###Java Client
-
-
 Windows
 -----------
 Coming Soon...
