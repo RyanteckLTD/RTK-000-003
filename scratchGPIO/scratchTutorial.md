@@ -15,14 +15,11 @@ Next you will need to connect to your Raspberry Pi via an SSH Client. Details on
 ###Scratch GPIO
 Now we need to install scratch, first start by downloading the installer by using the command
 ```
-wget http://goo.gl/Pthh62 -O isgh5.sh
+wget http://goo.gl/Pthh62 -O isgh5.sh && sudo bash isgh5.sh
 ```
-This will download the installer for ScratchGPIO V5. Next install it by running the following command:
-```
-sudo bash isgh5.sh
-```
+This will download the installer for ScratchGPIO V5 and install it.
 
-This will then install ScratchGPIO for you, after it says "Finished" you have now finished installing ScratchGPIO!
+After the installer finishes it should then say "Finished". 
 
 
 ###VNC
@@ -62,7 +59,7 @@ Finally reboot your Pi by running "sudo reboot"
 
 Programming with Scratch
 ------------------------
-Dummy
+First start by connecting to your Raspberry Pi using a VNC client over the network. This stage should be done over a wireless connection from where we are now going to program the robot.
 
 
 ---------------------------------------
