@@ -54,10 +54,10 @@ sudo chown root:root /etc/init.d/tightvncserver
 sudo chmod 755 /etc/init.d/tightvncserver
 sudo update-rc.d tightvncserver defaults
 ```
-Finally reboot your Pi by running "sudo restart"
+Finally reboot your Pi by running "sudo reboot"
 
 ####Your Raspberry Pi Should now be ready for scratching!
-####You will now need to connect to your Raspberry Pi using VNC. See the guide "connectingToVNC" in the handyTipsGuides folder on how to connect.
+####You will now need to connect to your Raspberry Pi using VNC. See the guide "connectingToVNC" in the handyTipsGuides folder on how to connect via an VNC Client.
 
 
 Programming with Scratch
