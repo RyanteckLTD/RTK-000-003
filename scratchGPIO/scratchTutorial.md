@@ -61,7 +61,8 @@ Finally reboot your Pi by running "sudo reboot"
 
 
 Programming with Scratch
---------------
+------------------------
+Dummy
 
 
 ---------------------------------------
