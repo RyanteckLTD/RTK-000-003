@@ -11,10 +11,12 @@ This is maintained by RealVNC who maintain their own version of VNC which can of
 
 After downloading navigate to <a href="chrome://apps" target="_blank">chrome://apps</a> in chrome and then click on the VNC icon (You may have to swap pages using the arrows at the sides). After you should be presented with the following screen.
 
+<a href="" target="_blank"><img src="imageResources/vncP1.png"/></a>
+
 Next type the IP Address of your Raspberry Pi with a :1 after (without spaces) into the address box. Leave quality as automatic (this will pick the best quality / speed mixture for you, over a LAN network this should be good quality and speed).
+After you may have an warning message appear about not using an encrypted connection, this is not an issue as you are not transmitting confidential information and are on a local area network.
 
-
-
+You should now be connected to your Raspberry Pi!
 
 
 ###Java Client
