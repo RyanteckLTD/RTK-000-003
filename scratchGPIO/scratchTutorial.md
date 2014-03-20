@@ -38,7 +38,7 @@ First start by installing the tightvnc server using the command:
 sudo apt-get install tightvncserver
 ```
 
-Next we want to configure the server and add a password. Do this by typing in the command
+Then we want to configure the server and add a password. Do this by typing in the command
 
 ```
 tightvncserver
