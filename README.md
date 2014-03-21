@@ -22,8 +22,12 @@ It Includes:
 
 + 1 x 150Mbps Wireless Adapter tested to work with Raspberry Pi. (Test speeds came out at up to 30Mbps download).
 
+Most of this documentation is easily transfered to other robots built with the RTK-000-001 or other boards with modification.
+
+
+
 ---------------------------------------
-All documentation is released under Creative Commons Attribution-ShareAlike 4.0 International.
+All documentation is released under Creative Commons Attribution-ShareAlike 4.0 International. Altough it is freely available this documentation still takes time and money to write.
 
 <center><img src="by-sa.png"/></center>
 
