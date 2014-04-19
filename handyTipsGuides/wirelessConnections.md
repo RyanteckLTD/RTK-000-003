@@ -86,7 +86,7 @@ We currently do not have a WEP configuration due to it being unsecure, please co
 Multiple Networks
 --------
 It is quite simple to add multiple networks at one point, just repeat the same process under another network, here is an example of my network config without passkeys.
-'''
+```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 network={
@@ -121,7 +121,7 @@ ssid="NHC-WiFi"
 key_mgmt=NONE
 }
 
-''' 
+``` 
 
 Finishing Configuration
 --------
