@@ -36,33 +36,33 @@ On mac, you can use the chrome web app VNC Viewer like mentioned in the cross pl
 
 Download the mac .dmg by find the section titled Mac OS X and clicking the Download button in it
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 20.20.41.png"/></a>
+<a href="" target="_blank"><img src="imageResources/vncViewerDownloadMacOSX.png"/></a>
 
 To download, it will ask you to fill out a form. You only have to put in your name and email address before clicking submit.
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 21.07.21.png"/></a>
+<a href="" target="_blank"><img src="imageResources/formVncViewerDownloadMac.png"/></a>
 
 Then, before downloading, it will ask you to agree to the VNC END USER LICENCE AGREEMENT. Read it if you wish. To download, tick the  I have read and accept these terms and conditions tickbox underneath the agreement, then press the download button below that
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 21.07.43.png"/></a>
+<a href="" target="_blank"><img src="imageResources/eulaAgreeOnlineMacDownloadVNC.png"/></a>
 
 The download will then begin shortly. It should only take a couple of seconds to download the 2.4mb .dmg mac installer file.
 
 You will find the .dmg installer file in your downloads. Double click on it to mount it.
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 21.10.09.png"/></a>
+<a href="" target="_blank"><img src="imageResources/mountedVncMac.png"/></a>
 
 Once mounted, drag the VNC Viewer icon to your application folder to have a copy of it saved to your applications folder. Double click on the VNC Viewer icon to open it, once you have a copy of it in your downloads. It may come up with a warning 'VNC Viewer is an application download from the internet. Are you sure you want to open it?'. Answer with 'Open'. Then the installer opens. You have to agree to the end user licence again by checking the tickbox and clicking ok to continue (again, have a read through if you wish).
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 21.14.00.png"/></a>
+<a href="" target="_blank"><img src="imageResources/eulaAgreeInstallerMacVNC.png"/></a>
 
 VNC Viewer will then apear as it will apear in the future times you open it from your applications.
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 21.16.35.png"/></a>
+<a href="" target="_blank"><img src="imageResources/blankVncEntryMac.png"/></a>
 
 To connect to your Pi's VNC server, you will need to know your Pi's IP Address. Find it out in the findingOutYourIpAddress handy guide. Then, in the VNC Server box, type the IP Address of your Raspberry Pi with a :1 after (without spaces). Leave the dropdown as let vnc server choose and press Connect. After you may have an warning message appear about not using an encrypted connection, this is not an issue as you are not transmitting confidential information and are on a local area network.
 
-<a href="" target="_blank"><img src="imageResources/Screen\ Shot\ 2014-04-19\ at\ 21.19.22.png"/></a>
+<a href="" target="_blank"><img src="imageResources/piVncEntryMac.png"/></a>
 
 You should now be connected to your Raspberry Pi!
 
