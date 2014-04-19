@@ -1,38 +1,6 @@
 How to find your Raspberry Pi's IP Address
 ===========
 We found the easiest way to find an IP address of your Raspberry Pi is using a handy tool called Fing.
-
-Windows
--------
-Coming soon...
-
-Ubuntu 
------
-Tested on Ubuntu 14.04 and 13.10
-First download Fing from Overlook's website, for ubuntu and other debian based operating systems select the DEB and the architecture you are using (This is likely 64-bit on a modern computer).
-
-After it has downloaded click on the icon and then the Ubuntu Software Centre should Load, then click the install button and then fing should be installed.
-Then open up a terminal window and then run the command ```sudo fing``` and fing will run and display a list of all the IP addresses. and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology.
-
-<img src="imageResources/fingUbuntu.png"/>
-
-
-Linux (DEB) Command Line 
------
-Tested on Ubuntu 14.04 and 13.10, should be compatible with Debian as well.
-First download Fing by running the following command, change the lx64 to lx32 if you are running a 32 bit version of Linux.
-```wget "http://www.overlooksoft.com/packages/download?plat=lx64&ext=deb" -O fing.deb```
-next you can install it by typing ``` sudo dpkg -i fing.deb ```
-
-It should now be installed.
-
-Next run the command ```sudo fing``` and fing will run and display a list of all the IP addresses. and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology.
-A picture of the output can be found above in the ubuntu section.
-
-Linux (RPM)
------
-Coming soonn..
-
 Android
 -------
 First you will have to install an application called Fing onto your Android device, to do this you can either look in the app store for "Fing" or click the following link and click the install button. https://play.google.com/store/apps/details?id=com.overlook.android.fing
@@ -45,6 +13,43 @@ A Raspberry Pi connected via the ethernet cable will show as Raspberry Pi Founda
 Make a note of this IP address and you are done!, You can also assign icons to each device by pressing down the button and clicking change icon. At the bottom there is one for Raspberry Pi.
 
 
+
+Windows
+-------
+First download Fing from Overlook's website at http://www.overlooksoft.com/download, select the windows installer and install it. Then after installation reboot your computer. 
+Next start Fing by going to Start->All Programs ->Overlook Fing->Fing then select D to discover devices on the network. Type the letter of the network device you wish to use and then type in 1 for one discovery round, N for no domain names, enter for file and then T for table output, text for text output, c to output to console and then N t ocomplete. Finally press y to execute the command.
+You should then get the output, for our wi-fi adapters you are looking for Shenzhen Ogemray Technology. An example output is below
+
+<img src="imageResources/fingUbuntu.png"/>
+
+Ubuntu 
+-----
+Tested on Ubuntu 14.04 and 13.10
+First download Fing from Overlook's website ( http://www.overlooksoft.com/download) , for ubuntu and other debian based operating systems select the DEB and the architecture you are using (This is likely 64-bit on a modern computer).
+
+After it has downloaded click on the icon and then the Ubuntu Software Centre should Load, then click the install button and then fing should be installed.
+Then open up a terminal window and then run the command ```sudo fing``` and fing will run and display a list of all the IP addresses. and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology.
+
+<img src="imageResources/fingUbuntu.png"/>
+
+If you are on a computer with multiple network devices you will have to specify which device to use, on most computers wireless is wlan0 and cable is eth0 as default. Do this by instead typing ```sudo fing wlan0``` 
+
+
+Linux (DEB) Command Line 
+-----
+Tested on Ubuntu 14.04 and 13.10, should be compatible with Debian as well.
+First download Fing by running the following command, change the lx64 to lx32 if you are running a 32 bit version of Linux.
+```wget "http://www.overlooksoft.com/packages/download?plat=lx64&ext=deb" -O fing.deb```
+next you can install it by typing ``` sudo dpkg -i fing.deb ```
+
+It should now be installed.
+
+Next run the command ```sudo fing``` and fing will run and display a list of all the IP addresses. and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology.
+A picture of the output can be found above in the ubuntu section. If you are on a computer with multiple network devices you will have to specify which device to use, on most computers wireless is wlan0 and cable is eth0 as default. ```sudo fing wlan0```
+
+Linux (RPM)
+-----
+Coming soonn..
 
 Mac
 ---
