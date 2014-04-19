@@ -62,7 +62,7 @@ VNC Viewer will then apear as it will apear in the future times you open it from
 
 To connect to your Pi's VNC server, you will need to know your Pi's IP Address. Find it out in the findingOutYourIpAddress handy guide. Then, in the VNC Server box, type the IP Address of your Raspberry Pi with a :1 after (without spaces). Leave the dropdown as let vnc server choose and press Connect. After you may have an warning message appear about not using an encrypted connection, this is not an issue as you are not transmitting confidential information and are on a local area network.
 
-<a href="" target="_blank"><img src="imageResources/Screen Shot 2014-04-19 at 21.19.22.png"/></a>
+<a href="" target="_blank"><img src="imageResources/Screen\ Shot\ 2014-04-19\ at\ 21.19.22.png"/></a>
 
 You should now be connected to your Raspberry Pi!
 
