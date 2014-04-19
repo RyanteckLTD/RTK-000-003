@@ -15,6 +15,10 @@ Coming soonn..
 
 Android
 -------
+First you will have to install an application called Fing onto your Android device, to do this you can either look in the app store for "Fing" or click the following link and click the install button. https://play.google.com/store/apps/details?id=com.overlook.android.fing
+
+After the application has installed it is as simple as launching it and then clicking the refresh icon in the top right.
+
 
 Mac
 ---
