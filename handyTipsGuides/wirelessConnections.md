@@ -68,7 +68,7 @@ scan_ssid=1
 OPEN / No password
 --------
 Replace SSID_HERE with your wireless network name.
-``'
+```
 network={
 #open
 ssid="SSID_HERE"
