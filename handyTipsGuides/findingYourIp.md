@@ -99,6 +99,20 @@ You have now found your ip address on you mac using fing, well done!
 iOS
 ---
 
-This will be done shortly...
+YOUR IPAD OR iOS DEVICE MUST BE CONNECTED TO A ROUTER TO CONTINUE
+
+On iPad, the best way to  view the devices connected to your router and their ip addresses is to download the App Fing - Network Scanner from the App Store and use that (This tutorial is transferrable to iPhone).
+
+Firstly, open the App Store and find the Fing - Network Scanner app. Search 'fing' and tap on the one that looks like this:
+
+FING IN APP STORE
+
+Download it (press on the FREE button, then press INSTALL) and enter your Apple ID password to sign into the iTunes Store (if you don't have an Apple Id, you'll have to make one, and if you haven't logged in before, it will ask for your email and password that you used for your apple id). Wait for it to download. Once downloaded, this icon will apear on one of your home screens:
+
+FING ON HOME SCREEN
+
+Tap on it and a list of the devices on your router and their ip address apears. You are looking for the IP address (the first column that has dots and numbers, e.g. 192.168.0.11) of the device that shows up as Shenzhen Ogemray Technology (in one of the middle text columns).
+
+You have now found your ip address on you iPad (or other iOS device) using fing, well done!
 
 -Written by Zachary Igielman
