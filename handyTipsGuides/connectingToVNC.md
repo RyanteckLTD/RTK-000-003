@@ -70,6 +70,9 @@ You should now be connected to your Raspberry Pi!
 
 iOS Devices (iPad)
 ----------
+
+YOUR IPAD OR iOS DEVICE MUST BE CONNECTED TO THE INTERNET TO CONTINUE
+
 On iPad, the best way to connect to your Pi's VNC Server is to download the App VNC Viewer from the App Store and use that (This tutorial is transferrable to iPhone).
 
 Firstly, open the App Store and find the VNC Viewer app. Search 'vnc viewer' and tap on the one that looks like this:
