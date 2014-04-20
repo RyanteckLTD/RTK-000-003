@@ -96,4 +96,7 @@ A picture of the output can be found above in the ubuntu section. If you are on 
 
 iOS
 ---
-We can't actually do this one as I have no apples, if somebody can for me then it would be appreciated.
+
+This will be done shortly...
+
+-Written by Zachary Igielman
