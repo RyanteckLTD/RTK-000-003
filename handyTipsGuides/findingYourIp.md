@@ -53,8 +53,46 @@ Coming soonn..
 
 Mac
 ---
-We can't actually do this one as I have no mac equipment, if somebody can for me then it would be appreciated.
 
+On mac, you can load your routers configuration page in an internet browser, but that is complicated and varies for each router. It is easier to again use fing to search the devices on your network.
+
+To download fing on a mac, go to [http://www.overlooksoft.com/fing](http://www.overlooksoft.com/fing) and click on the Download Now button
+
+PICTURE OF DOWNLOAD PAGE
+
+Scroll down to the Fing for deskptop section 9we are installing it on a computer, not a mobile device) and click on the OS X Installer to download it.
+
+FING FOR DESKTOP DOWNLOAD
+
+A few seconds later, after the next page loads, a .DMG package should start to download. That should only take a few seconds to download the ~4mb installer package. Find it in your downloads and double-click on it to mount it. When mounted, this window should apear:
+
+FING MOUNTED
+
+That .pkg is the package installer that we want to use to install fing. It is not the application so there is no need to save it to your applications. Double click on it to open it.
+
+FIRST INSTALLER PAGE
+
+Follow the installer through to download fing:
+1. Press continue in the first page
+2. Read the important information if you wish to and then press continue
+3. Read through the license if you wish to and then press continue
+4. Press Agree (press to read it if you want to) to agree to the licence (you have to agree to be able to install fing, if you don't agree, you cannot use fing)
+5. Press Install (if you want to install it on your Macintosh HD in the applications folder, if not, before pressing install, press Change Install Location and choose somewhere else there and then press Install)
+
+INSTALL PAGE
+
+It will ask for you to enter your password to allow it to install new software (if you are not in an admin account, you will have to enter the Name and Password of an admin account to allow it to install new software). Enter your password (and name if you have to) and then click install software. The install will then begin and within a few seconds it will be over.
+
+INSTALL COMPLETE
+
+Press close in the installer window and disregard the installer (delete the .dmg file in your downloads, eject it from being mounted). 
+
+Open terminal to use fing because it is a command line tool (click on Applications>Utilities>Terminal on Mac).
+
+Next run the command ```sudo fing``` and fing will run and display a list of all the IP addresses. and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology.
+A picture of the output can be found above in the ubuntu section. If you are on a computer with multiple network devices you will have to specify which device to use, on most computers wireless is wlan0 and cable is eth0 as default. ```sudo fing wlan0```
+
+-Written by Zachary Igielman
 
 iOS
 ---
