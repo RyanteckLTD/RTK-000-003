@@ -105,11 +105,11 @@ On iPad, the best way to  view the devices connected to your router and their ip
 
 Firstly, open the App Store and find the Fing - Network Scanner app. Search 'fing' and tap on the one that looks like this:
 
-<img src="imageResources/ipadipfing/1.png"/>
+<img src="imageResources/ipadipfing/1.PNG"/>
 
 Download it (press on the FREE button, then press INSTALL) and enter your Apple ID password to sign into the iTunes Store (if you don't have an Apple Id, you'll have to make one, and if you haven't logged in before, it will ask for your email and password that you used for your apple id). Wait for it to download. Once downloaded, this icon will apear on one of your home screens:
 
-<img src="imageResources/ipadipfing/2.png"/>
+<img src="imageResources/ipadipfing/2.PNG"/>
 
 Tap on it and a list of the devices on your router and their ip address apears. You are looking for the IP address (the first column that has dots and numbers, e.g. 192.168.0.11) of the device that shows up as Shenzhen Ogemray Technology (in one of the middle text columns).
 
