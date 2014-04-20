@@ -23,20 +23,24 @@ First start by confirming that you have all of the pieces out of the pack, it sh
 * 1 X 26 extra tall 26 way pin header
 * 3 X Two Way terminal screw blocks
 * 3 X Two Pin Headers
+
 <a href="" target="_blank"><img src="rtkAssembly/1.JPG"/></a>
 
 ###Soldering the IC Socket
 First start by soldering the IC socket to the board, to do this insert the socket in with the notch lining up on the PCB, turn upside down and then solder, the foam from the socket can help to keep the PCB stable while soldering as seen below.
+
 <a href="" target="_blank"><img src="rtkAssembly/2.JPG"/></a><a href="" target="_blank"><img src="rtkAssembly/2-5.JPG"/></a>
 
 ###Soldering the terminal blocks
 Next solder the terminal blocks, place the blocks in with the terminals pointing outwards and then solder one pin of each socket. By doing only one pin you are able to check that they all are flush to the board and if not amend by heating the pin up and then pushing the terminal block in place.
+
 <a href="" target="_blank"><img src="rtkAssembly/3.JPG"/></a> <a href="" target="_blank"><img src="rtkAssembly/3-1.JPG"/></a> 
 
 
 ###Soldering the 26 Pin GPIO header
 Now we need to solder the hardest part of the kit, the 26 Pin GPIO header, we find it easiest to first fit the GPIO header onto the Raspberry Pi and then solder two pins from oposite corners to make the board flat and hold it for the other 24 pins. After then solder all of the pins making sure you are careful not to cause a bridge or accidently melt another piece of the board. This will take time to get correct so do not rush this step otherwise there is a high chance you can make a mistake.
 Placing the pins ready and then soldering the top left and bottom right pins.
+
 <a href="" target="_blank"><img src="rtkAssembly/4.JPG"/></a> <a href="" target="_blank"><img src="rtkAssembly/4-2.JPG"/></a> 
 
 Soldering the harder bottom row and then the top row.
