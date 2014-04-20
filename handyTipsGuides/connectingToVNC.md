@@ -75,33 +75,33 @@ On iPad, the best way to connect to your Pi's VNC Server is to download the App 
 Firstly, open the App Store and find the VNC Viewer app. Search 'vnc viewer' and tap on the one that looks like this:
 
 PICTURE OF VNC VIEWER IN APP STORE
-<a href="" target="_blank"><img src="imageResources/"/></a>
+<a href="" target="_blank"><img src="imageResources/ipadvnc/1.PNG"/></a>
 
 Download it (press on the FREE button, then press INSTALL) and enter your Apple ID password to sign into the iTunes Store (if you don't have an Apple Id, you'll ahve to make one, and if you haven't logged in before, it will ask for your email and password that you used for your apple id). Wait for it to download. Once downloaded, this icon will apear on one of your home screens:
 
 PICTURE OF HOME SCREEN CROPPED TO ICON
-<a href="" target="_blank"><img src="imageResources/"/></a>
+<a href="" target="_blank"><img src="imageResources/ipadvnc/2.PNG"/></a>
 
 Tap on it to open it and this window will apear:
 
 PCITURE OF NO CONNECTIONS
-<a href="" target="_blank"><img src="imageResources/"/></a>
+<a href="" target="_blank"><img src="imageResources/ipadvnc/3.PNG"/></a>
 
 Tap the + button in the top right corner to add a connection. This window will then appear:
 
 EMPTY DETAILS CONNECTION ADD WINDOW
-<a href="" target="_blank"><img src="imageResources/"/></a>
+<a href="" target="_blank"><img src="imageResources/ipadvnc/4.PNG"/></a>
 
 Put your raspberry pi's ip address (to find it out, look at the handy guide to finding your ip address) followed by :1.
 
 PICTURE OF FILLED IN DETAILS ADD WINDOW CONNECTION
-<a href="" target="_blank"><img src="imageResources/"/></a>
+<a href="" target="_blank"><img src="imageResources/ipadvnc/5.PNG"/></a>
 
 Press save and then connect. After you may have an warning message appear about not using an encrypted connection, this is not an issue as you are not transmitting confidential information and are on a local area network. You should now be connected to your Raspberry Pi!
 
 The next time you connect, it will saved the details for the connection that you inputted. This may be handy as you don't have to re enter the details for the connection every time. Note that your Pi's ip address may change on reboot, especially if device leave or join your network when your Pi is off, so if the connection does not work, find your Pi's new ip address and connect again.
 
 ALL CONNECTIONS WINDOW
-<a href="" target="_blank"><img src="imageResources/"/></a>
+<a href="" target="_blank"><img src="imageResources/ipadvnc/6.PNG"/></a>
 
 -Written by Zachary Igielman
