@@ -58,19 +58,19 @@ On mac, you can load your routers configuration page in an internet browser, but
 
 To download fing on a mac, go to [http://www.overlooksoft.com/fing](http://www.overlooksoft.com/fing) and click on the Download Now button
 
-PICTURE OF DOWNLOAD PAGE
+<img src="imageResources/macipfing/1.png"/>
 
 Scroll down to the Fing for deskptop section 9we are installing it on a computer, not a mobile device) and click on the OS X Installer to download it.
 
-FING FOR DESKTOP DOWNLOAD
+<img src="imageResources/macipfing/2.png"/>
 
 A few seconds later, after the next page loads, a .DMG package should start to download. That should only take a few seconds to download the ~4mb installer package. Find it in your downloads and double-click on it to mount it. When mounted, this window should apear:
 
-FING MOUNTED
+<img src="imageResources/macipfing/3.png"/>
 
 That .pkg is the package installer that we want to use to install fing. It is not the application so there is no need to save it to your applications. Double click on it to open it.
 
-FIRST INSTALLER PAGE
+<img src="imageResources/macipfing/4.png"/>
 
 Follow the installer through to download fing:
 1. Press continue in the first page
@@ -79,11 +79,11 @@ Follow the installer through to download fing:
 4. Press Agree (press to read it if you want to) to agree to the licence (you have to agree to be able to install fing, if you don't agree, you cannot use fing)
 5. Press Install (if you want to install it on your Macintosh HD in the applications folder, if not, before pressing install, press Change Install Location and choose somewhere else there and then press Install)
 
-INSTALL PAGE
+<img src="imageResources/macipfing/5.png"/>
 
 It will ask for you to enter your password to allow it to install new software (if you are not in an admin account, you will have to enter the Name and Password of an admin account to allow it to install new software). Enter your password (and name if you have to) and then click install software. The install will then begin and within a few seconds it will be over.
 
-INSTALL COMPLETE
+<img src="imageResources/macipfing/6.png"/>
 
 Press close in the installer window and disregard the installer (delete the .dmg file in your downloads, eject it from being mounted). 
 
