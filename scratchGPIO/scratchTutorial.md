@@ -40,6 +40,8 @@ Then we want to configure the server and add a password. Do this by typing in th
 ```
 tightvncserver
 ```
+Set the password you will require to login to the server, we do not need a viewer password so press n for the view only password.
+
 Next we want to download a piece of code that will allow us to automatically run this VNC Server on boot. This can be downloaded using the follwing command:
 ```
 wget http://goo.gl/FlrtAW --no-check-certificate --trust-server-names
@@ -51,7 +53,7 @@ sudo chown root:root /etc/init.d/tightvncserver
 sudo chmod 755 /etc/init.d/tightvncserver
 sudo update-rc.d tightvncserver defaults
 ```
-Finally reboot your Pi by running "sudo reboot"
+Finally reboot your Pi by running "sudo reboot" while also swapping over to wireless mode.
 
 ####Your Raspberry Pi Should now be ready for scratching!
 ####You will now need to connect to your Raspberry Pi using VNC. See the guide "connectingToVNC" in the handyTipsGuides folder on how to connect via an VNC Client.
@@ -60,6 +62,20 @@ Finally reboot your Pi by running "sudo reboot"
 Programming with Scratch
 ------------------------
 First start by connecting to your Raspberry Pi using a VNC client over the network. This stage should be done over a wireless connection from where we are now going to program the robot.
+
+We are going to program a simple robot controller using Scratch GPIO to teach you the basics of controlling the robot with scratch. After you can either then advance to do the same thing in Python or add in other parts to the scratch robot.
+
+Now click on the Scratch GPIO 5 icon on the desktop, scratch will load and then display the message "Remote Sensor Connections Enabled" confirming scratch has been connected to the GPIO pins.
+
+Before we can control the GPIO pins we need to set up scratch to use the motor board. Do this by selecting the Variables tab and creating the variable "addon".
+
+Then drag in the set addon block into the main area and then dragging in When the green flag is clicked, after set the addon to ```RTKMotorCon```.
+
+
+We will want to use the arrow keys to control the robot, the same keys can be substituted with A (Left), W (Up), S (Down) and D (Right).
+
+
+
 
 
 ---------------------------------------
