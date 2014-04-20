@@ -52,4 +52,17 @@ If you wish to also have the extra I2C, GND and 3V3 Pins then you can solder the
 ###Fitting the IC Into the Socket
 Finally take the IC out of its foam and then insert into the socket, you will require to bend the pins slightly to fit it in. Make sure you fit it in with the notch aligning the notch on the socket (Closest to the two terminal blocks if the IC socket has been accidently put in the wrong way round).
 
+##Wiring the board
+The battery pack goes into the terminal block in the bottom right labeled VCC2 with the Positive wire in the left side and Negative in the Right side. Then use a small phillips screwdriver to screw the terminal block shut to hold the cables in place.
+
+The motors are able to go into the motor sockets either way round, once programmed if you find a motor is going the wrong direction it can be solved by switching the motor's wires around in the same socket.
+
+####Other Notes
+It is not recommended to put the black conductive foam from the IC socket and the IC on the board to protect any pins. The foam is conductive so could cause issues to the board or your Raspberry Pi. You can store with the foam on when not in use and when there is no power applied as long as there is no foam when power is applied.
+
+This board has been tested up to 12V at 0.5A a motor, even tough the chip is capable of more these are the guidelines we recommend. The motors we provide with 4AAs work perfectly fine with the chip getting warm, any higher voltages or ampage may cause the chip to get extremely hot.
+
+
+
+
 
