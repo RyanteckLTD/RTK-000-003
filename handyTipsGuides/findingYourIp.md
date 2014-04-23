@@ -89,8 +89,69 @@ Press close in the installer window and disregard the installer (delete the .dmg
 
 Open terminal to use fing because it is a command line tool (click on Terminal in Applications>Utilities).
 
-Next run the command ```sudo fing``` and fing will run and display a list of all the IP addresses and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology.
-A picture of the output can be found above in the ubuntu section. If you are on a computer with multiple network devices you will have to specify which device to use, on most computers wireless is wlan0 and cable is eth0 as default. ```sudo fing wlan0```
+Next run the command ```sudo fing``` and fing will run and display a list of all the IP addresses and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology. If you are on a computer with multiple network devices you will have to specify which device to use, on most computers wireless is wlan0 and cable is eth0 as default. ```sudo fing wlan0```
+
+Here is the output of ```sudo fing``` on my mac. The area in bold is the device you're looking for and my pi's ip address would be 192.168.0.30:
+```
+11:33:28 > Discovery profile: Default discovery profile
+11:33:28 > Discovery class:   data-link (data-link layer)
+11:33:28 > Discovery on:      192.168.0.0/24
+
+11:33:28 > Discovery round starting.
+11:33:28 > Host is up:   192.168.0.3
+           HW Address:   20:C9:D0:7F:0A:D5 (Apple)
+           Hostname:     zacharys-mbp
+
+11:33:28 > Host is up:   192.168.0.1
+           HW Address:   4C:17:EB:75:4A:AB (SAGEMCOM)
+           Hostname:     skyrouter.home
+
+11:33:28 > Host is up:   192.168.0.5
+           HW Address:   00:19:FB:53:C9:B2 (BSkyB)
+           Hostname:     unknown
+
+11:33:28 > Host is up:   192.168.0.2
+           HW Address:   50:EA:D6:19:EB:02 (Apple)
+           Hostname:     zacharys-iphone
+
+11:33:28 > Host is up:   192.168.0.12
+           HW Address:   D8:30:62:57:8C:47 (Apple)
+           Hostname:     zachs-imac
+
+11:33:28 > Host is up:   192.168.0.27
+           HW Address:   E0:CA:94:13:DB:8A (Askey Computer)
+           Hostname:     unknown
+```
+**11:33:28 > Host is up:   192.168.0.30
+           HW Address:   7C:DD:90:5B:A9:B9 (Shenzhen Ogemray Technology)
+           Hostname:     raspberrypi**
+```
+11:33:29 > Discovery progress 25%
+11:33:30 > Discovery progress 50%
+11:33:30 > Host is up:   192.168.0.4
+           HW Address:   50:46:5D:1C:0C:33
+           Hostname:     unknown
+
+11:33:31 > Discovery progress 75%
+-------------------------------------------------------------------------------
+| State | Host                              | MAC Address       | Last change |
+|-----------------------------------------------------------------------------|
+|  UP   | 192.168.0.1                       | 4C:17:EB:75:4A:AB |             |
+|  UP   | 192.168.0.2                       | 50:EA:D6:19:EB:02 |             |
+|  UP   | 192.168.0.3                       | 20:C9:D0:7F:0A:D5 |             |
+|  UP   | 192.168.0.4                       | 50:46:5D:1C:0C:33 |             |
+|  UP   | 192.168.0.5                       | 00:19:FB:53:C9:B2 |             |
+|  UP   | 192.168.0.12                      | D8:30:62:57:8C:47 |             |
+|  UP   | 192.168.0.27                      | E0:CA:94:13:DB:8A |             |
+|  UP   | 192.168.0.30                      | 7C:DD:90:5B:A9:B9 |             |
+-------------------------------------------------------------------------------
+
+11:33:33 > Discovery round completed in 4.786 seconds.
+11:33:33 > Network 192.168.0.0/24 has 8/8 hosts up.
+
+11:33:33 > Next round starting at 11:34:28. Press Ctrl^C to exit.
+```
+I pressed Ctrl+C to stop.
 
 You have now found your ip address on you mac using fing, well done!
 
@@ -111,8 +172,10 @@ Download it (press on the FREE button, then press INSTALL) and enter your Apple 
 
 <img src="imageResources/ipadipfing/2.PNG"/>
 
-Tap on it and a list of the devices on your router and their ip address apears. You are looking for the IP address (the first column that has dots and numbers, e.g. 192.168.0.11) of the device that shows up as Shenzhen Ogemray Technology (in one of the middle text columns).
+Tap on it and a list of the devices on your router and their ip address apears. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology. This is what my app showed. The last device is clearly the Raspberry Pi as it says Shenzhen Ogemray Technology which is the brand of our wifi dongle, and the ip of it is 192.168.0.13.
 
-You have now found your ip address on you iPad (or other iOS device) using fing, well done!
+<img src="imageResources/ipadipfing/IMG_0750.png"/>
+
+Look for a Shenzhen Ogemray Technology on your list, look in the ip address column and you have now found your ip address on you iPad (or other iOS device) using fing, well done!
 
 -Written by Zachary Igielman
