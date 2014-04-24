@@ -53,5 +53,5 @@ There are a couple of systems that may be viable to use for the robot, these are
 #### ~ £38 (£24 board + 8 AA Rechargable batterys required)
 To be written.
 
-###PiUPS
+###<a href="http://cpc.farnell.com/jsp/level5/module.jsp?moduleId=cpc/690512.xml" target="_blank">PiUPS</a> ~ £28 (£24 Board + 6 Batterys required)
 To be written.
