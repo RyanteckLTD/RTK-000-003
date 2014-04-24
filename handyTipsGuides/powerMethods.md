@@ -6,7 +6,7 @@ To power the motors you will need 4 AA batterys of either rechargable or non rec
 ***Here is our list of power choices for the Raspberry Pi***
 
 ##USB Battery Bank / Emergency Phone Bank
-###Between £10-15 for a normal one, £20+ for extra capacity. Recommended
+####Between £10-15 for a normal one, £20+ for extra capacity. Recommended
 
 This is the easiest method of powering your Raspberry Pi as it plug and play. They normally take 5-10 hours to charge up depending on the charge level and the size of the bank.
 
@@ -21,7 +21,7 @@ Adafruit (US) - http://www.adafruit.com/products/1565 , Not tried & Tested yet. 
 RS Electronics (UK) - http://uk.rs-online.com/web/p/power-banks/7757504/ , Not Tried & Tested but recommended by other Raspberry Pi'ers online. (Also double capacity at http://uk.rs-online.com/web/p/power-banks/7757508/)
 
 ##DC to DC Regulators
-###Between £2-6 
+#### Between £2-6 
 A DC to DC regulator is an more advanced Voltage Regulator allowing you to set the output voltage and is also more effecient from where it does not make the voltage go down by loosing heat but instead by switching it making it also very efficent compared to a normal regulator.
 
 This is an method that we are awaiting to test but we have seen on other projects, you can either use the same power supply as the motors or use another set of batteries (which is recommended). You will either need a Step Up if you are trying to use a voltage lower than 4.5V or a step down if you are using a voltage more than 5.5V
@@ -31,7 +31,7 @@ You can find these online on places such as <a href="http://www.amazon.co.uk/s/r
 Bot Toughts also sell one on <a href="https://www.tindie.com/products/BBTech/tps5430-buck-power-converter-replaceable-78xx-series/" target="_blank">Tindie</a> which we will be trying and testing. (This requires 5.8V to provide 5V so would require ~ 6 AA batteries.
 
 ##4 X AA Rechargables
-### ~ £3 to build + battery cost of ~ £10
+#### ~ £3 to build + battery cost of ~ £10
 You are able to get away with 4 AA ***Rechargable*** batteries and plug it directly into the Raspberry Pi. 
 
 ***Warning, if you do not use rechargables you have the risk of permantly damaging your Raspberry Pi***
@@ -50,7 +50,7 @@ Build instructions will be written soon.
 There are a couple of systems that may be viable to use for the robot, these are currently being written.
 
 ###MoPi
-#### - ~ £35
+#### £35
 To be written.
 
 ###PiUPS
