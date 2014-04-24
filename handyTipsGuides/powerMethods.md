@@ -50,7 +50,7 @@ Build instructions will be written soon.
 There are a couple of systems that may be viable to use for the robot, these are currently being written.
 
 ###MoPi
-#### £35
+#### ~ £38 (£24 board + 8 AA Rechargable batterys required)
 To be written.
 
 ###PiUPS
