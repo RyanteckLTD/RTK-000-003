@@ -19,7 +19,7 @@ Finally type in your Raspberry Pi's password, (Default "raspberry") and you shou
 
 Linux & Mac
 ---------
-On Linux & Mac the tools required are usually installed already. All that you have to do is open up an terminal window (Ctrl-Alt-T) and then type in the following command:
+On Linux & Mac the tools required are usually installed already. All that you have to do is open up an terminal window (Ctrl-Alt-T on Linux, click on terminal Applications>Utilities on Mac) and then type in the following command:
 
 
  ```

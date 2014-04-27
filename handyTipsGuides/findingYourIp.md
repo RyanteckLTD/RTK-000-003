@@ -53,9 +53,99 @@ Coming soonn..
 
 Mac
 ---
-We can't actually do this one as I have no mac equipment, if somebody can for me then it would be appreciated.
 
+On mac, you can open your router's configuration page in an internet browser to find out connected devices and their ip adresses, but that is complicated and varies for each router. It is easier to use fing to search view the devices on your network and their ip addresses.
+
+To download fing on a mac, go to [http://www.overlooksoft.com/fing](http://www.overlooksoft.com/fing) and click on the Download Now button.
+
+<img src="imageResources/macipfing/1.png"/>
+
+Scroll down to the Fing for Desktops section because we are installing it on a computer, not a mobile device. Click on the OS X Installer to download it.
+
+<img src="imageResources/macipfing/2.png"/>
+
+A few seconds later, a .DMG package file should start to download. It should only take a few seconds to download the ~4mb installer package. Once downloaded, find it in your downloads and click on it to mount it. When mounted, this window should apear:
+
+<img src="imageResources/macipfing/3.png"/>
+
+That .pkg is the package installer that we want to use to install fing. It is not the application so there is no need to save it to your applications. Double click on it to open it.
+
+<img src="imageResources/macipfing/4.png"/>
+
+Follow the installer step-by-step to download fing:
+1. Press continue in the first page
+2. Read the important information if you wish to, and then press continue
+3. Read through the license if you wish to, and then press continue
+4. Press Agree (press to read it first if you want to) to agree to the licence
+5. Press Install (if you want to install it on your Macintosh HD in the applications folder, if not, before pressing install, press Change Install Location and choose somewhere else and then press Install)
+
+<img src="imageResources/macipfing/5.png"/>
+
+It may ask for you to enter your password to allow it to install new software (if you are not in an admin account, you will have to enter the Name and Password of an admin account to allow it to install new software). Enter your password (and name if you have to) and then click install software. The install will then begin and within a few seconds it will be over.
+
+<img src="imageResources/macipfing/6.png"/>
+
+Press close in the installer window and disregard the installer (delete the .dmg file in your downloads and eject the mounted dmg).
+
+Open terminal to use fing because it is a command line tool (click on Terminal in Applications>Utilities).
+
+Next run the command ```sudo fing``` and fing will run and display a list of all the IP addresses and their devices. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology. If you are on a computer with multiple network devices you will have to specify which device to use, on most computers wireless is wlan0 and cable is eth0 as default. ```sudo fing wlan0```
+
+Here is the output of ```sudo fing``` on my mac. The area in bold is the device you're looking for and my pi's ip address would be 192.168.0.30:
+```
+11:33:28 > Discovery profile: Default discovery profile
+11:33:28 > Discovery class:   data-link (data-link layer)
+11:33:28 > Discovery on:      192.168.0.0/24
+
+11:33:28 > Discovery round starting.
+
+11:33:28 > Host is up:   192.168.0.30
+           HW Address:   7C:DD:90:5B:A9:B9 (Shenzhen Ogemray Technology)
+           Hostname:     raspberrypi
+
+11:33:29 > Discovery progress 25%
+11:33:30 > Discovery progress 50%
+11:33:30 > Host is up:   192.168.0.4
+           HW Address:   50:46:5D:1C:0C:33
+           Hostname:     unknown
+
+11:33:31 > Discovery progress 75%
+-------------------------------------------------------------------------------
+| State | Host                              | MAC Address       | Last change |
+|-----------------------------------------------------------------------------|
+|  UP   | 192.168.0.30                      | 7C:DD:90:5B:A9:B9 |             |
+-------------------------------------------------------------------------------
+
+11:33:33 > Discovery round completed in 4.786 seconds.
+11:33:33 > Network 192.168.0.0/24 has 8/8 hosts up.
+
+11:33:33 > Next round starting at 11:34:28. Press Ctrl^C to exit.
+```
+I pressed Ctrl+C to stop.
+
+You have now found your ip address on you mac using fing, well done!
+
+-Written by Zachary Igielman
 
 iOS
 ---
-We can't actually do this one as I have no apples, if somebody can for me then it would be appreciated.
+
+YOUR IPAD OR iOS DEVICE MUST BE CONNECTED TO A ROUTER TO CONTINUE
+
+On iPad, the best way to  view the devices connected to your router and their ip addresses is to download the App Fing - Network Scanner from the App Store and use that (This tutorial is transferrable to iPhone).
+
+Firstly, open the App Store and find the Fing - Network Scanner app. Search 'fing' and tap on the one that looks like this:
+
+<img src="imageResources/ipadipfing/1.PNG"/>
+
+Download it (press on the FREE button, then press INSTALL) and enter your Apple ID password to sign into the iTunes Store (if you don't have an Apple Id, you'll have to make one, and if you haven't logged in before, it will ask for your email and password that you used for your apple id). Wait for it to download. Once downloaded, this icon will apear on one of your home screens:
+
+<img src="imageResources/ipadipfing/2.PNG"/>
+
+Tap on it and a list of the devices on your router and their ip address apears. You are looking for the IP address of the device that shows up as Shenzhen Ogemray Technology. This is what my app showed. The last device is clearly the Raspberry Pi as it says Shenzhen Ogemray Technology which is the brand of our wifi dongle, and the ip of it is 192.168.0.30.
+
+<img src="imageResources/ipadipfing/IMG_0750.png"/>
+
+Look for a Shenzhen Ogemray Technology on your list, look in the ip address column and you have now found your ip address on you iPad (or other iOS device) using fing, well done!
+
+-Written by Zachary Igielman
