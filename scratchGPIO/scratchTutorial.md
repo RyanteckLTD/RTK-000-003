@@ -66,16 +66,22 @@ First start by connecting to your Raspberry Pi using a VNC client over the netwo
 We are going to program a simple robot controller using Scratch GPIO to teach you the basics of controlling the robot with scratch. After you can either then advance to do the same thing in Python or add in other parts to the scratch robot.
 
 Now click on the Scratch GPIO 5 icon on the desktop, scratch will load and then display the message "Remote Sensor Connections Enabled" confirming scratch has been connected to the GPIO pins.
+<a href="" target="_blank"><img src="imgs/0.png"/></a>
 
-Before we can control the GPIO pins we need to set up scratch to use the motor board. Do this by selecting the Variables tab and creating the variable "addon".
+Before we can control the GPIO pins we need to set up scratch to use the motor board. Do this by selecting the Variables tab and creating the variable ```addon```, also create the variables ```Motor1``` and ```Motor2```.
+<a href="" target="_blank"><img src="imgs/1.png"/></a>
 
-Then drag in the set addon block into the main area and then dragging in When the green flag is clicked, after set the addon to ```RTKMotorCon```.
+Then drag in the set addon block into the main area and then dragging in When the green flag is clicked, after set the addon to ```RTKMotorCon```, You can also add in two more set blocks to set Motor1 and Motor2 to 0.
+<a href="" target="_blank"><img src="imgs/2.png"/></a>
 
 
 We will want to use the arrow keys to control the robot, the same keys can be substituted with A (Left), W (Up), S (Down) and D (Right).
+Start by going to the control tab and dragging in the when key pressed block
+<a href="" target="_blank"><img src="imgs/3.png"/></a>
 
 
 
+<a href="" target="_blank"><img src="imgs/4.png"/></a>
 
 
 ---------------------------------------
