@@ -7,7 +7,7 @@ The configuration stage is best performed by a person who has basic skills with 
 Configuration
 --------------
 ###Pre Configuration
-Your SD card should already be configured to the guide "raspberryPiSetup.md" located in the top folder. This will have your Raspberry Pi configured for use on a wireless connection, you may find for the installation of the software plugging in a wired ethernet connection may speed parts of this installtaion.
+Your SD card should already be configured to the guide "raspberryPiSetup.md" located in the top folder. This will have your Raspberry Pi configured for use on a wireless connection, you may find for the installation of the software plugging in a wired ethernet connection may speed parts of this installation.
 
 Next you will need to connect to your Raspberry Pi via an SSH Client. Details on how to connect can be found in the "handyTipsGuides" folder under "sshConnection".
 
@@ -23,11 +23,11 @@ After the installer finishes it should then say "Finished".
 
 
 ###VNC
-VNC or Virtual Network Computing is an method we can use to be able to run a Virtual Desktop on the Raspberry Pi and use it over the network. This is now used commonly in day to day computing for cloud services or remote assitance.
+VNC or Virtual Network Computing is an method we can use to be able to run a Virtual Desktop on the Raspberry Pi and use it over the network. This is now used commonly in day to day computing for cloud services or remote assistance.
 
 For this part we will be installing a VNC server allowing your other computer to connect to the Raspberry Pi.
 
-*NOTE* a VNC server on a Raspberry Pi will not reduce network security unless you allow people manually via a method called Port Forwarding. You will also setup a Password that is required to login to the Raspberry Pi.
+*NOTE* a VNC server on a Raspberry Pi will not reduce network security unless you allow people manually via a method called Port Forwarding. You will also set-up a Password that is required to login to the Raspberry Pi.
 
 First start by installing the tightvnc server using the command:
 
@@ -42,7 +42,7 @@ tightvncserver
 ```
 Set the password you will require to login to the server, we do not need a viewer password so press n for the view only password.
 
-Next we want to download a piece of code that will allow us to automatically run this VNC Server on boot. This can be downloaded using the follwing command:
+Next we want to download a piece of code that will allow us to automatically run this VNC Server on boot. This can be downloaded using the following command:
 ```
 wget http://goo.gl/FlrtAW --no-check-certificate --trust-server-names
 ```

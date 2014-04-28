@@ -1,4 +1,4 @@
-#RTK-000-003 Robot Assmbly Guide
+#RTK-000-003 Robot Assembly Guide
 
 This is the instruction guide to assemble your new robot that has arrived. 
 
