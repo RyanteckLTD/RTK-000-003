@@ -35,7 +35,7 @@ Now place these safely on one side for assembly.
 ##2 - Assembling the motors
 First we need to solder the wires to the motors, for this you can either use the slightly thicker wire or the thinner wire included. Both work the same but we find the thicker wire is slightly better and more robust.
 
-To do this use a small screwdriver to pop the plastic protector off the end of the motor and then solder the cable to the motor, after put the wire back over the motor (you may need to seperate the wire a little bit at the motor to put the plastic cover back through. After then clip it onto the motor and repeat for the other motor.
+To do this use a small screwdriver to pop the plastic protector off the end of the motor and then solder the cable to the motor, after put the wire back over the motor (you may need to separate the wire a little bit at the motor to put the plastic cover back through. After then clip it onto the motor and repeat for the other motor.
 
 <a href="" target="_blank"><img src="robotAssembly/4.JPG"/></a><a href="" target="_blank"><img src="robotAssembly/4-1.JPG"/></a>
 
@@ -79,7 +79,7 @@ For this you will require the following:
 * Power source for Raspberry Pi, see the<a href="../handyTipsGuides/powerMethods.md" target="_blank"> Power methods</a> guide in the handyTipsGuides folder.
 * Bluetak or double sided sticky tape
 
-Start by placing 4 small pieces of bluetak over the 4 screws at the back of the robot to help prevent the Pi from beng short circuited. Next place your Pi here with the GPIO pins at the back of the robot.
+Start by placing 4 small pieces of bluetak over the 4 screws at the back of the robot to help prevent the Pi from being short circuited. Next place your Pi here with the GPIO pins at the back of the robot.
 
 We then place the battery pack at the front of the robot and then the motor board clips onto the Pi and the motors then screw into the terminal blocks at the sides. Don't worry about the polarity of the two motors as to fix this it is as simple as then swapping the two cables around for that motor.
 
