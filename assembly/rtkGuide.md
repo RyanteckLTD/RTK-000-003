@@ -38,7 +38,7 @@ Next solder the terminal blocks, place the blocks in with the terminals pointing
 
 
 ###Soldering the 26 Pin GPIO header
-Now we need to solder the hardest part of the kit, the 26 Pin GPIO header, we find it easiest to first fit the GPIO header onto the Raspberry Pi and then solder two pins from opposite corners to make the board flat and hold it for the other 24 pins. After then solder all of the pins making sure you are careful not to cause a bridge or accidentally melt another piece of the board. This will take time to get correct so do not rush this step otherwise there is a high chance you can make a mistake.
+Now we need to solder the hardest part of the kit, the 26 Pin GPIO header, we find it easiest to first fit the GPIO header onto the Raspberry Pi and then solder two pins from opposite corners to make the board flat and hold it for the other 24 pins. After then solder all of the pins making sure you are careful not to cause a bridge or occidentally melt another piece of the board. This will take time to get correct so do not rush this step otherwise there is a high chance you can make a mistake.
 Placing the pins ready and then soldering the top left and bottom right pins.
 
 <a href="" target="_blank"><img src="rtkAssembly/4.JPG"/></a> <a href="" target="_blank"><img src="rtkAssembly/4-2.JPG"/></a> 
@@ -54,10 +54,10 @@ If you wish to also have the extra I2C, GND and 3V3 Pins then you can solder the
 <a href="" target="_blank"><img src="rtkAssembly/5.JPG"/></a> <a href="" target="_blank"><img src="rtkAssembly/5-1.JPG"/></a> 
 
 ###Fitting the IC Into the Socket
-Finally take the IC out of its foam and then insert into the socket, you will require to bend the pins slightly to fit it in. Make sure you fit it in with the notch aligning the notch on the socket (Closest to the two terminal blocks if the IC socket has been accidently put in the wrong way round).
+Finally take the IC out of its foam and then insert into the socket, you will require to bend the pins slightly to fit it in. Make sure you fit it in with the notch aligning the notch on the socket (Closest to the two terminal blocks if the IC socket has been accidentally put in the wrong way round).
 
 ##Wiring the board
-The battery pack goes into the terminal block in the bottom right labelled VCC2 with the Positive wire in the left side and Negative in the Right side. Then use a small phillips screwdriver to screw the terminal block shut to hold the cables in place.
+The battery pack goes into the terminal block in the bottom right labelled VCC2 with the Positive wire in the left side and Negative in the Right side. Then use a small Phillips screwdriver to screw the terminal block shut to hold the cables in place.
 
 The motors are able to go into the motor sockets either way round, once programmed if you find a motor is going the wrong direction it can be solved by switching the motor's wires around in the same socket.
 
