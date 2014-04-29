@@ -1,7 +1,7 @@
 #Power Methods for your Raspberry Pi
-The budget robotics kit and RTK-000-001 do not come with any electronics to power the Raspberry Pi, the reason why is from where it is highly not recommended to power both Motors & Pi from the same power source due to possible issues which can corrupt the SD card or even damge the Pi itself. There is also a lot of extra paperwork and other work needed to be able to send out a power supply with it and can also be deined to post to some countries which is why we do not include a powerbank.
+The budget robotics kit and RTK-000-001 do not come with any electronics to power the Raspberry Pi, the reason why is from where it is highly not recommended to power both Motors & Pi from the same power source due to possible issues which can corrupt the SD card or even damage the Pi itself. There is also a lot of extra paperwork and other work needed to be able to send out a power supply with it and can also be denied to post to some countries which is why we do not include a powerbank.
 
-To power the motors you will need 4 AA batterys of either rechargable or non rechargable, non rechargables provide a little bit extra voltage making the motors move slightly faster but are not envrionmentaly freindly and can cost more in the long term than rechargables.
+To power the motors you will need 4 AA batteries of either rechargable or non rechargable, non rechargables provide a little bit extra voltage making the motors move slightly faster but are not environmentally friendly and can cost more in the long term than rechargables.
 
 ***Here is our list of power choices for the Raspberry Pi***
 
@@ -22,7 +22,7 @@ RS Electronics (UK) - http://uk.rs-online.com/web/p/power-banks/7757504/ , Not T
 
 ##DC to DC Regulators
 #### Between £2-6 
-A DC to DC regulator is an more advanced Voltage Regulator allowing you to set the output voltage and is also more effecient from where it does not make the voltage go down by loosing heat but instead by switching it making it also very efficent compared to a normal regulator.
+A DC to DC regulator is an more advanced Voltage Regulator allowing you to set the output voltage and is also more efficient from where it does not make the voltage go down by loosing heat but instead by switching it making it also very efficient compared to a normal regulator.
 
 This is an method that we are awaiting to test but we have seen on other projects, you can either use the same power supply as the motors or use another set of batteries (which is recommended). You will either need a Step Up if you are trying to use a voltage lower than 4.5V or a step down if you are using a voltage more than 5.5V
 
@@ -50,8 +50,8 @@ Build instructions will be written soon.
 There are a couple of systems that may be viable to use for the robot, these are currently being written.
 
 ###MoPi
-#### ~ £38 (£24 board + 8 AA Rechargable batterys required)
+#### ~ £38 (£24 board + 8 AA Rechargable batteries required)
 To be written.
 
-###<a href="http://cpc.farnell.com/jsp/level5/module.jsp?moduleId=cpc/690512.xml" target="_blank">PiUPS</a> ~ £28 (£24 Board + 6 Batterys required)
+###<a href="http://cpc.farnell.com/jsp/level5/module.jsp?moduleId=cpc/690512.xml" target="_blank">PiUPS</a> ~ £28 (£24 Board + 6 batteries required)
 To be written.

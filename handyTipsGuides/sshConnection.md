@@ -29,7 +29,7 @@ ssh pi@192.168.0.10
 
 Replacing pi with the username (normally pi as default) and replacing 192.168.0.10 with the Pi's IP Address (See findingYourIp.md if you need to find it).
 
-Next type in your Raspberry Pi's password (default "raspberry") and then you will be logged into the command line envrionment.
+Next type in your Raspberry Pi's password (default "raspberry") and then you will be logged into the command line environment.
 
 You may be asked to confirm the SSH key for the first time, to do this just type yes into the console.
 
