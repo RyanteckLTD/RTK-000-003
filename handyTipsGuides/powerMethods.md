@@ -50,8 +50,20 @@ Build instructions will be written soon.
 There are a couple of systems that may be viable to use for the robot, these are currently being written.
 
 ###MoPi
-#### ~ £38 (£24 board + 8 AA Rechargable batteries required)
-To be written.
+#### >= £24 (£24 board + batteries, solar panels, wind turbines, ... required)
+MoPi is mobile and 24/7 power for the Pi. On your bike, up a tree, or for your
+home server:
+
+* multiple inputs: standard batteries, car power sockets, old laptop supplies,
+  solar panels, ...
+* hot-swap power replacement without stopping work
+* shutdown the Pi cleanly when batteries discharge
+* integrated on/off switch
+* UPS (uninterruptible power) when using both batteries and mains
+* on-board LED indicators and on-Pi notifications
+
+And it even fits in the Pibow...  More at http://kck.st/1gK5U3t or
+http://pi.gate.ac.uk/mopi/
 
 ###<a href="http://cpc.farnell.com/jsp/level5/module.jsp?moduleId=cpc/690512.xml" target="_blank">PiUPS</a> ~ £28 (£24 Board + 6 batteries required)
 To be written.
