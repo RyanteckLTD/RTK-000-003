@@ -18,7 +18,7 @@ What is included:
 You will require to assemble your RTK-000-001 either before or near the end of assembling your kit. Instructions can be found in the <a href="rtkGuide.md" target="_blank">rtkGuide.md</a> file
 
 ##1 - Preparing for assembly
-First start by laying out all of the parts on a table or desk, then take the parts out of the bag containing the motors and put all of the screws into a little bowl or dish to keep them from getting lost.
+First start by laying out all of the parts on a table or desk, then take the parts out of the bag containing the motors and put all of the screws into a little bowl or dish to keep them from getting lost. Remove the plastic wrapper covering the chassis.
 
 <a href="" target="_blank"><img src="robotAssembly/1.JPG"/></a>
 
