@@ -2,9 +2,36 @@
 from sys import exit
 import time
 import pygame
+import RPi.GPIO as GPIO
 pygame.init()
 screen = pygame.display.set_mode((480,480))
 
+#Setup the Pi to use BCM mode
+GPIO.setmode(GPIO.BCM)
+#Output the pins 17,18,22,23
+
+GPIO.setup(17,GPIO.OUT)
+GPIO.setup(18,GPIO.OUT)
+GPIO.setup(22,GPIO.OUT)
+GPIO.setup(23,GPIO.OUT)
+
+#Lets create 4 functions
+
+def forwards(state):
+	GPIO.output(17,state)
+	GPIO.output(22,state)
+
+def backwards(state):
+	GPIO.output(18,state)
+	GPIO.output(23,state)
+
+def left(state):
+	GPIO.output(17,state)
+	GPIO.output(23,state)
+
+def right (state):
+	GPIO.output(18,state)
+	GPIO.output(22,state)
 
 while True:
 	pygame.display.flip()
