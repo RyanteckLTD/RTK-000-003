@@ -38,8 +38,10 @@ while True:
 	keystate = pygame.key.get_pressed()
 	if keystate[pygame.K_RIGHT]:
         	print "right"
+		right(1)
 	else:
 		print "right off"
+		right(0)
 
         if keystate[pygame.K_LEFT]:
 		print "left"
