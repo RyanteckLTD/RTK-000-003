@@ -1,6 +1,7 @@
-#RTK-000-001 Simple SSH Python controller
+#RTK-000-001 Tester
 #Licensed under the GNU GPL V3 License
 #(C) Ryanteck LTD. 2014
+#Contributors: Ryan Walmsley,
 
 #We want to be able to sleep but don't need all of time & space, just import sleep
 from time import sleep

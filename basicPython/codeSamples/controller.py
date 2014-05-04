@@ -1,3 +1,7 @@
+#RTK-000-001 Basis
+#Licensed under the GNU GPL V3 License
+#(C) Ryanteck LTD. 2014
+#Contributors: Ryan Walmsley, Michael Horne 
 from sys import exit
 import time
 import pygame

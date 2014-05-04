@@ -10,7 +10,18 @@ We will be first setting up and configuring the GPIO pins on the Raspberry Pi an
 Start by adding in the following lines. You require to copy the code but not the comments indicated with the # symbol.
 
 ```
+#
+import time
+import RPi.GPIO as GPIO
 
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+GPIO.setup(17,GPIO.OUT)
+GPIO.setup(18,GPIO.OUT)
+GPIO.setup(22,GPIO.OUT)
+GPIO.setup(23,GPIO.OUT)
 
 
 
