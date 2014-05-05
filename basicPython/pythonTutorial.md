@@ -81,3 +81,21 @@ First identify which motor is going in the wrong direction and follow the cable 
 
 #####Wire Swap
 An easier solution which means all tutorials will be using the same numbers is just to unscrew the motor going the wrong way and plug the wires in the other way round. Both motors should go the same way now.
+
+###Backwards, Left & Right
+To add in the other directions in very simple, start by re-opening the python program by running ```nano robotPython.py``` and repeat the forwards code 3 more times changing the forwards to backwards, left and right for each function.
+Next we need to modify them to move the motors in other directions. 
+We need the following outputs for each motor. This assumes Motor 1 will be on the left and Motor 2 on the right
+
+*Backwards, m1b & m2b on. m1a & m2a off.
+*Left, m1b & m2a on. m1a & m2b off.
+*Right, m1a & m2b on. m1b & m2a off.
+Your code should now have the following.
+```
+#Make both motors go forwards
+def forwards():
+        GPIO.output(m1a,1) # Motor 1 Forwards turn off
+        GPIO.output(m1b,0) # Motor 1 Backwards turn off
+        GPIO.output(m2a,1) # Motor 2 Forwards turn on
+        GPIO.output(m2b,0) # Motor 2 Backwards turn off
+```
