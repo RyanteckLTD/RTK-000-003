@@ -92,8 +92,23 @@ We need the following outputs for each motor. This assumes Motor 1 will be on th
 *Right, m1a & m2b on. m1b & m2a off.
 Your code should now have the following.
 ```
-#Make both motors go forwards
-def forwards():
+#Make motors turn bak, bak  
+def backwards():
+        GPIO.output(m1a,1) # Motor 1 Forwards turn off
+        GPIO.output(m1b,0) # Motor 1 Backwards turn off
+        GPIO.output(m2a,1) # Motor 2 Forwards turn on
+        GPIO.output(m2b,0) # Motor 2 Backwards turn off
+        
+#Make motors turn fwd, bak      
+def left():
+        GPIO.output(m1a,1) # Motor 1 Forwards turn off
+        GPIO.output(m1b,0) # Motor 1 Backwards turn off
+        GPIO.output(m2a,1) # Motor 2 Forwards turn on
+        GPIO.output(m2b,0) # Motor 2 Backwards turn off
+        #Make both motors go forwards
+        
+#Make motors turn fwd, bak          
+def right():
         GPIO.output(m1a,1) # Motor 1 Forwards turn off
         GPIO.output(m1b,0) # Motor 1 Backwards turn off
         GPIO.output(m2a,1) # Motor 2 Forwards turn on
