@@ -10,20 +10,59 @@ We will be first setting up and configuring the GPIO pins on the Raspberry Pi an
 Start by adding in the following lines. You require to copy the code but not the comments indicated with the # symbol.
 
 ```
-#
-import time
-import RPi.GPIO as GPIO
+#RTK-000-001 Basis
+#Licensed under the GNU GPL V3 License
+#(C) Ryanteck LTD. 2014
+#Contributors: Ryan Walmsley, Michael Horne
+from time import sleep #We will need to sleep the code at points
+import RPi.GPIO as GPIO #Import the GPIO library as GPIO
 
+#Setup GPIO
+GPIO.setmode(GPIO.BCM) # Set the numbers to Broadcom Mode
+GPIO.setwarnings(False) # Ignore any errors
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-
-GPIO.setup(17,GPIO.OUT)
-GPIO.setup(18,GPIO.OUT)
-GPIO.setup(22,GPIO.OUT)
-GPIO.setup(23,GPIO.OUT)
-
-
+GPIO.setup(17,GPIO.OUT) #Set 17 as output (Motor 1 A)
+GPIO.setup(18,GPIO.OUT) #Set 18 as output (Motor 1 B)
+GPIO.setup(22,GPIO.OUT) #Set 22 as output (Motor 2 A)
+GPIO.setup(23,GPIO.OUT) #Set 23 as output (Motor 2 B)
 
 ```
+This has now setup the GPIO pins ready for use.
 
+Now we will make a function to turn both motors forward, add the following now to your code.
+
+```
+#Make both motors go forwards
+def forwards():
+        GPIO.output(17,1) # Motor 1 Forwards turn off
+        GPIO.output(18,0) # Motor 1 Backwards turn off
+        GPIO.output(22,1) # Motor 2 Forwards turn on
+        GPIO.output(23,0) # Motor 2 Backwards turn off
+```
+Next we need to add in a stop function, add this after the code above
+```
+##All off
+def stop():
+        GPIO.output(17,0) # Motor 1 Forwards turn off
+        GPIO.output(18,0) # Motor 1 Backwards turn off
+        GPIO.output(22,0) # Motor 2 Forwards turn off
+        GPIO.output(23,0) # Motor 2 Backwards turn off
+```
+Finally we want to add in a small loop to make the motors go forwards for one second and then stop for another.
+Do this by adding the following
+```
+#Forever
+while True:
+    #Turn motors forward
+    forwards()
+    #sleep for 1 second
+    sleep(1)
+    #Stop
+    stop()
+    #sleep 1 second
+    sleep(1)
+```
+
+Now we can save the code by running the following commands, ```Ctrl + X``` to save, ```y``` to confirm writing and then ```enter``` to confirm to save.
+
+We now want to run our python code
