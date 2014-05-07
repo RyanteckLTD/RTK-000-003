@@ -1,0 +1,8 @@
+#Python PyGame Controller
+In this second part of the tutorial we will be converting our code to add in a basic PyGame controller.
+
+First start by copying your basis code to a new file by running the command ```cp robotPython.py robotPygame.py``` and then open up the nano editor for that file using ```nano robotPygame.py```.
+
+The first thing we will need to do is import Pygame and setup a screen.
+
+Start by importing pygame at the top of your code along with the other imports just below import RPi.GPIO. The code to import ```import pygame```.
