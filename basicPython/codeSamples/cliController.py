@@ -46,7 +46,7 @@ def stop():
         GPIO.output(23,0)
 
 shell = curses.initscr()
-shell.nodelay(True)
+shell.nodelay(False)
 
 while True:
     key = shell.getch()
@@ -54,25 +54,26 @@ while True:
     if key == 119:
         print("Forward")
         forwards()
-
+	#time.sleep(0.1)
     elif key == 115:
         print ("Backward")
-        backwards()        
+        backwards()    
+	#time.sleep(0.1)    
 
-    elif key == 92:
+    elif key == 97:
         print ("Left")
         turn_left()
+	#time.sleep(0.1)
 
     elif key == 100:
         print ("Right")
         turn_right()
+	#time.sleep(0.1)
 
-    else:
-        stop()
-    
+      
     if key == 24:
         curses.endwin()
         exit(0)
-    time.sleep(0.01)
-
+    time.sleep(0.02)
+    stop()
 
