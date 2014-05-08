@@ -1,14 +1,11 @@
-#RTK-000-001 Pygame Controller
+#RTK-000-001 Bash / CLI Controller
 #Licensed under the GNU GPL V3 License
 #(C) Ryanteck LTD. 2014
-#Contributors: Ryan Walmsley, Michael Horne 
-from sys import exit
+#Contributors: Ryan Walmsley
 import time
-import pygame
+import curses
+from sys import exit
 import RPi.GPIO as GPIO
-
-pygame.init()
-screen = pygame.display.set_mode((480,480))
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
@@ -48,31 +45,34 @@ def stop():
         GPIO.output(22,0)
         GPIO.output(23,0)
 
+shell = curses.initscr()
+shell.nodelay(True)
+
 while True:
-        pygame.display.flip()
-        keystate = pygame.key.get_pressed()
+    key = shell.getch()
 
-        if keystate[pygame.K_RIGHT]:
-                print "right"
-                turn_right()
+    if key == 119:
+        print("Forward")
+        forwards()
 
-        elif keystate[pygame.K_LEFT]:
-                print "left"
-                turn_left()
+    elif key == 115:
+        print ("Backward")
+        backwards()        
 
-        elif keystate[pygame.K_DOWN]:
-                print "back"
-                backwards()
+    elif key == 92:
+        print ("Left")
+        turn_left()
 
-        elif keystate[pygame.K_UP]:
-                print "up"
-                forwards()
-        else:
-                stop()
+    elif key == 100:
+        print ("Right")
+        turn_right()
 
-        for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                        exit(0)
+    else:
+        stop()
+    
+    if key == 24:
+        curses.endwin()
+        exit(0)
+    time.sleep(0.01)
 
-        time.sleep(0.01)
 
