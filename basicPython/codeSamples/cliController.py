@@ -74,6 +74,6 @@ while True:
     if key == 24:
         curses.endwin()
         exit(0)
-    time.sleep(0.02)
+    time.sleep(0.03)
     stop()
 
