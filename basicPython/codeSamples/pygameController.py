@@ -30,13 +30,13 @@ def backwards():
         GPIO.output(22,0)
         GPIO.output(23,1)
 
-def turn_left():
+def left():
         GPIO.output(17,0)
         GPIO.output(18,1)
         GPIO.output(22,1)
         GPIO.output(23,0)
 
-def turn_right():
+def right():
         GPIO.output(17,1)
         GPIO.output(18,0)
         GPIO.output(22,0)
@@ -54,11 +54,11 @@ while True:
 
         if keystate[pygame.K_RIGHT]:
                 print "right"
-                turn_right()
+                right()
 
         elif keystate[pygame.K_LEFT]:
                 print "left"
-                turn_left()
+                left()
 
         elif keystate[pygame.K_DOWN]:
                 print "back"

@@ -1,10 +1,9 @@
-#RTK-000-001 Bash / CLI Controller
+#RTK-000-001 Python Basis
 #Licensed under the GNU GPL V3 License
 #(C) Ryanteck LTD. 2014
-#Contributors: Ryan Walmsley
+#Contributors: Ryan Walmsley, Michael Horne
 import time
-import curses
-from sys import exit
+
 import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BCM)
@@ -44,33 +43,4 @@ def stop():
         GPIO.output(18,0)
         GPIO.output(22,0)
         GPIO.output(23,0)
-
-shell = curses.initscr()
-shell.nodelay(False)
-
-while True:
-    key = shell.getch()
-
-    if key == 119:
-        print("Forward")
-        forwards()
-
-    elif key == 115:
-        print ("Backward")
-        backwards()    
-	   
-    elif key == 97:
-        print ("Left")
-        left()
-
-    elif key == 100:
-        print ("Right")
-        right()
-
-      
-    if key == 24:
-        curses.endwin()
-        exit(0)
-    time.sleep(0.03)
-    stop()
 

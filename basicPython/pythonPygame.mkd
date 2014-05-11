@@ -28,11 +28,11 @@ We now need to add event handlers for each key, these can be done using the foll
 ```
         if keystate[pygame.K_RIGHT]: #If the right key is pressed
             print "right"#Turn Right
-            turn_right()
+            right()
     
         elif keystate[pygame.K_LEFT]: #Else if the left key is pressed
             print "left" #Turn Left
-            turn_left()
+            left()
         
         elif keystate[pygame.K_DOWN]: #Else if the down key is pressed
             print "back" #Go Backwards
