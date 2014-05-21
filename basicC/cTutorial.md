@@ -23,7 +23,7 @@ Will fetch an updated version then you can re-run the build script below.
 To build/install there is a new simplified script:
 
 ```cd wiringPi```
-```./build```
+``` ./build ```
 
 The new build script will compile and install it all for you – it does use the sudo command at one point, so you may wish to inspect the script before running it.
 
@@ -174,4 +174,5 @@ void stop()
 ```
 
 Woo! We have now got the basis of our code completed for the next tutorials.
+
 -Written by Zachary Igielman
