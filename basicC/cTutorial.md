@@ -133,27 +133,41 @@ Next we need to modify them to move the motors in other directions.
 We need the following outputs for each motor. This assumes Motor 1 will be on the left and Motor 2 on the right
 
 *Backwards, m1b & m2b on. m1a & m2a off.
+
 *Left, m1b & m2a on. m1a & m2b off.
+
 *Right, m1a & m2b on. m1b & m2a off.
+
+
 Your code should now have the following above the 'int main(void)'
 ```
-
-void right()
+//Make both motors turn backwards
+void reverse()
 {
-  digitalWrite(m1a, LOW);
-  digitalWrite(m1b, HIGH);
-  digitalWrite(m2a, LOW);
-  digitalWrite(m2b, HIGH);
+ digitalWrite(m1a, LOW);
+ digitalWrite(m1b, HIGH);
+ digitalWrite(m2a, LOW);
+ digitalWrite(m2b, HIGH);
 }
 
+//Make motors turn fwd, bak
 void left()
 {
-  digitalWrite(m1a, HIGH);
-  digitalWrite(m1b, LOW);
-  digitalWrite(m2a, LOW);
-  digitalWrite(m2b, HIGH);
+ digitalWrite(m1a, HIGH);
+ digitalWrite(m1a, LOW);
+ digitalWrite(m1a, LOW);
+ digitalWrite(m1a, HIGH);
 }
 
+//Make motors turn fwd, bak
+void right()
+{
+ digitalWrite(m1a, LOW);
+ digitalWrite(m1a, HIGH);
+ digitalWrite(m1a, HIGH);
+ digitalWrite(m1a, LOW);
+}
+```
 Woo! We have now got the basis of our code completed for the next tutorials.
 
 -Written by Zachary Igielman
