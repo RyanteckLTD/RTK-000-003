@@ -71,7 +71,7 @@ Now click on the Scratch GPIO 5 icon on the desktop, scratch will load and then 
 Before we can control the GPIO pins we need to set up scratch to use the motor board. Do this by selecting the Variables tab and creating the variable ```addon```, also create the variables ```Motor1``` and ```Motor2```.
 <a href="" target="_blank"><img src="imgs/1.png"/></a>
 
-Then drag in the set addon block into the main area and then dragging in When the green flag is clicked, after set the addon to ```RTKMotorCon```, You can also add in two more set blocks to set Motor1 and Motor2 to 0.
+Then drag in the set addon block into the main area and then dragging in When the green flag is clicked, after set the addon to ```RTKRpiMcb```, You can also add in two more set blocks to set Motor1 and Motor2 to 0.
 <a href="" target="_blank"><img src="imgs/2.png"/></a>
 
 
