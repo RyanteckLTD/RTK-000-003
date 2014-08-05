@@ -1,5 +1,5 @@
 /*
- * RTK-000-003 Node.js an Cylon Basis
+ * RTK-000-003 Node.js and Cylon Basis
  * Licensed under the GNU GPL V3 License
  * (C) Seravo Oy 2014
  * Contributors: Otto Kekäläinen
