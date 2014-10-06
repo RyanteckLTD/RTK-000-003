@@ -1,6 +1,5 @@
 /*
- * RTK-000-003 Node.js, Cylon.js and Async.js to support Blockly/code.org
- * style of syntax (moveForward(), turnLeft() etc..).
+ * RTK-000-003 Node.js an Cylon Basis
  * Licensed under the GNU GPL V3 License
  * (C) Seravo Oy 2014
  * Contributors: Otto Kekäläinen
@@ -50,13 +49,11 @@ Cylon.robot({
 
     function runStep(stepName, callback) {
 
-      var delay = 1; // how many seconds to do each step
-
       switch (stepName) {
         case 'moveForward':
           my.rwheelf.turnOn();
           my.lwheelf.turnOn();
-          after((delay).seconds(), function () {
+          after((1).seconds(), function () {
             my.rwheelf.turnOff();
             my.lwheelf.turnOff();
             callback();
@@ -66,7 +63,7 @@ Cylon.robot({
         case 'moveBackward':
           my.rwheelb.turnOn();
           my.lwheelb.turnOn();
-          after((delay).seconds(), function () {
+          after((1).seconds(), function () {
             my.rwheelb.turnOff();
             my.lwheelb.turnOff();
             callback();
@@ -76,7 +73,8 @@ Cylon.robot({
         case 'turnLeft':
           my.rwheelf.turnOn();
           my.lwheelb.turnOn();
-          after((delay).seconds(), function () {
+          // 0.35 seconds is about 90 degrees
+          after((0.38).seconds(), function () {
             my.rwheelf.turnOff();
             my.lwheelb.turnOff();
             callback();
@@ -86,7 +84,7 @@ Cylon.robot({
         case 'turnRight':
           my.rwheelb.turnOn();
           my.lwheelf.turnOn();
-          after((delay).seconds(), function () {
+          after((0.38).seconds(), function () {
             my.rwheelb.turnOff();
             my.lwheelf.turnOff();
             callback();
@@ -125,20 +123,21 @@ Cylon.robot({
     }
     q.drain = function() {
       console.log('Program completed.');
+      repeat();
     }
 
 
-
+    function repeat() {
+    // Use same syntax for movement as in code.org tutorials and Blockly
     // ** EDIT BELOW TO MAKE YOUR OWN MOVEMENT PATTERN **
 
-    // Use same syntax for movement as in code.org tutorials and Blockly
-    moveForward();
-    moveBackward();
-    turnLeft();
-    turnRight();
+      moveForward();
+      turnLeft();
 
     // ** EDIT ABOVE TO MAKE YOUR OWN MOVEMENT PATTERN **
-
+    // Remember to run this as sudo!
+    }
+    repeat();
 
 
     // Reset all pins, just to be sure
@@ -146,6 +145,24 @@ Cylon.robot({
     my.lwheelf.turnOff();
     my.rwheelb.turnOff();
     my.lwheelb.turnOff();
+
+    process.on('SIGINT', function() {
+      console.log("Caught interrupt signal");
+      my.rwheelf.turnOff();
+      my.lwheelf.turnOff();
+      my.rwheelb.turnOff();
+      my.lwheelb.turnOff();
+      process.exit();
+    });
+
+    process.on('exit', function() {
+      console.log("Program exiting");
+      my.rwheelf.turnOff();
+      my.lwheelf.turnOff();
+      my.rwheelb.turnOff();
+      my.lwheelb.turnOff();
+      process.exit();
+    });
 
   }
 }).start();
