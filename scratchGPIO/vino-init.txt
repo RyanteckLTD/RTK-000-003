@@ -1,0 +1,38 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          vino
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start/stop vino vnc
+### END INIT INFO
+
+# Thanks to penguin tutor
+# More details see: 
+# http://www.penguintutor.com/linux/tightvnc
+#Now modified by Ryanteck for fino
+
+### Customize this entry
+# Set the USER variable to the name of the user to start tightvncserver under
+export USER='pi'
+### End customization required
+
+eval cd ~$USER
+
+case "$1" in
+  start)
+    su $USER -c '/usr/lib/vino/vino-server'
+    echo "Starting Vino server for $USER "
+    ;;
+  stop)
+    pkill vino-server
+    echo "Vino stopped"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/vino {start|stop}"
+    exit 1
+    ;;
+esac
+exit 0
+
