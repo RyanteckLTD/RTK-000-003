@@ -22,7 +22,9 @@ eval cd ~$USER
 
 case "$1" in
   start)
-    su $USER -c '/usr/lib/vino/vino-server'
+    #Quick fix to make sure X should load
+    sleep 60
+    su $USER -c 'export DISPLAY=:0; /usr/lib/vino/vino-server'
     echo "Starting Vino server for $USER "
     ;;
   stop)
